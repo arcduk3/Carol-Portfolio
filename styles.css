@@ -328,11 +328,11 @@ nav li:hover::after {
     padding: 0;
   }
   
-  .social-media-list li a {
+  .social-media-list a {
     color: #707070;
   }
   
-  .social-media-list li {
+  .social-media-list {
     position: relative; 
     display: inline-block;
     height: 60px;
@@ -346,7 +346,7 @@ nav li:hover::after {
     transition: all .2s ease-in-out;
   }
   
-  .social-media-list li:after {
+  .social-media-list:after {
     content: '';
     position: absolute;
     top: 0;
@@ -360,17 +360,17 @@ nav li:hover::after {
     transition: all .2s ease-in-out;
   }
   
-  .social-media-list li:hover {
+  .social-media-list:hover {
     background-color: #fff; 
   }
   
-  .social-media-list li:hover:after {
+  .social-media-list:hover:after {
     opacity: 1;  
     transform: scale(1.12);
     transition-timing-function: cubic-bezier(0.37,0.74,0.15,1.65);
   }
   
-  .social-media-list li:hover a {
+  .social-media-list:hover a {
     color: #000;
 }
   
