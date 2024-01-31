@@ -1,0 +1,243 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    place-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+header {
+    background-color: #ffcee1;
+    color: #5c5c5c;
+    text-shadow: 2px 2px rgb(205, 205, 205);
+    padding: 1em;
+    text-align: center;
+    font-family: illegalc;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 50px;
+    font-size: 1.2em;
+    font-family: elegant;
+    text-transform: uppercase;
+	transition: all 300ms ease;
+	width: fit-content;
+	cursor: pointer;
+    position: relative;
+}
+
+nav a {
+    text-decoration: none;
+    color: inherit;
+    color: rgb(91, 91, 91);
+}
+
+section {
+    padding: 30px;
+}
+
+footer {
+    background-color: #5c5c5c;
+    color: #ffcee1;
+    text-align: center!important;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+nav li:hover {
+	transform: skew(10deg);
+}
+nav li::before {
+	content: attr(data-name);
+	position: absolute;
+	top: 0;
+	left: -20px;
+	background: var(--bgcolor);
+	height: 3rem;
+	overflow: hidden;
+	transition: all 300ms ease;
+	padding-left: 20px;
+}
+nav li:hover::before {
+	top: -3px;
+	left: 0px;
+	color: hotpink;
+}
+
+nav li::after {
+	content: "";
+	height: 1.3px;
+	width: 0;
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: hotpink;
+	transition: all 300ms ease;
+}
+nav li:hover::after {
+	width: 120%;
+	outline: 2px solid #5c5c5c;
+}
+
+h2 {
+    color: hotpink;
+    text-shadow: 2px 2px rgb(174, 174, 174);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 35px;
+    margin-bottom: -4vh;
+}
+
+@font-face {
+    font-family: dream;
+    src: url('fonts/dream_girl_2/Dream Girl2.otf');
+}
+
+@font-face {
+    font-family: elegant;
+    src: url(fonts/elegant_3/ELEGANT.ttf);
+}
+
+@font-face {
+    font-family: anoxicl;
+    src: url(fonts/anoxic/Anoxic-Light.ttf);
+}
+
+@font-face {
+    font-family: anoxiclo;
+    src: url(fonts/anoxic/Anoxic-LightOblique.ttf);
+}
+
+@font-face {
+    font-family: anoxicom;
+    src: url(fonts/anoxic/AnoxicOutline-Medium.ttf);
+}
+
+@font-face {
+    font-family: anoxicsm;
+    src: url(fonts/anoxic/AnoxicSC-Medium.ttf);
+}
+
+@font-face {
+    font-family: illegalc;
+    src: url('fonts/illegal_curves/Illegal Curves Bold.otf');
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.container .box-picture {
+    flex-basis: calc(33.33% - 20px);
+    margin: 10px;
+    background-color: rgb(255, 242, 250);
+    box-shadow: 0 4px 8px 0 rgba(68, 68, 68, 0.2);
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    border-radius: 10px;
+}
+
+img {
+    border-radius: 10px;
+    max-width: 98%;
+    
+}
+
+.container .box-personal-info {
+    flex-basis: calc(33.33% - 20px);
+    margin: 10px;
+    background-color: rgb(255, 242, 250);
+    box-shadow: 0 4px 8px 0 rgba(68, 68, 68, 0.2);
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    max-width: 100%;
+    height: 65vh;
+    border-radius: 10px;
+    margin-left: -15rem
+}
+
+.container .box-interests {
+    flex-basis: calc(33.33% - 20px);
+    margin-left: -1rem;
+    margin-right: -1rem;
+    background-color: rgb(255, 242, 250);
+    box-shadow: 0 4px 8px 0 rgba(68, 68, 68, 0.2);
+    padding: 20px;
+    text-align: center;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+h2 {
+    margin: 0 0 10px;
+}
+
+@media (max-width: 800px) {
+    .box {
+        flex-basis: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 500px) {
+    .box {
+        flex-basis: 100%;
+    }
+}
+
+p {
+    text-align: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    color: #4e4e4e;
+}
+
+h4 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #4e4e4e;
+    font-size: 23px;
+    margin-top: 2vh;
+}
+
+/* about me container */
+.box-personal-info .box p{
+    text-align: left!important;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    color: #4e4e4e;
+}
+
+.box-personal-info .box {
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+    border: #000000;
+    z-index: 9999;
+}
+
+.box-personal-info {
+    height: 30vh;
+}
+
+h3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+    color: #4e4e4e;
+    
+}
