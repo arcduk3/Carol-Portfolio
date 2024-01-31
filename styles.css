@@ -329,7 +329,8 @@ nav li:hover::after {
   }
   
   .social-media-list a {
-    color: #707070;
+    color: #252525;
+    text-decoration: none!important;
   }
   
   .social-media-list {
@@ -340,10 +341,12 @@ nav li:hover::after {
     margin: 10px 3px;
     line-height: 60px;
     border-radius: 50%;
-    color: #ffffff;
+    color: #252525;
     background-color: #ffcae2;
     cursor: pointer; 
     transition: all .2s ease-in-out;
+
+    margin-right: 1rem;
   }
   
   .social-media-list:after {
@@ -373,6 +376,8 @@ nav li:hover::after {
   .social-media-list:hover a {
     color: #000;
 }
+
+
   
 hr {
     border-color: rgba(255,255,255,.6);
